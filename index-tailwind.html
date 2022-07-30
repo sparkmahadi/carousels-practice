@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<div>
     <h2 class="text-4xl font-bold text-center">Tailwind components exploring</h2>
     <br><br>
 
@@ -135,9 +135,9 @@
 
 <!-- dropdown customization starts -->
 <section class="container mx-auto">
-  <section class="container mx-auto">
+  <section class="container ml-80">
     <div class="dropdown">
-      <label tabindex="0" class="btn m-1">Click</label>
+      <label tabindex="0" class="btn m-1">Normal dropdown</label>
       <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
         <li><a>Item 1</a></li>
         <li><a>Item 2</a></li>
@@ -145,50 +145,50 @@
     </div>
   </section>
   
-  <section class="container mx-auto"><div class="dropdown dropdown-end">
-    <label tabindex="0" class="btn m-1">Click</label>
+  <section class="container ml-80"><div class="dropdown dropdown-end">
+    <label tabindex="0" class="btn m-1">dropdown-end</label>
     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Item 1</a></li>
       <li><a>Item 2</a></li>
     </ul>
   </div></section>
-  <section class="container mx-auto"><div class="dropdown dropdown-top">
-    <label tabindex="0" class="btn m-1">Click</label>
+  <section class="container ml-80"><div class="dropdown dropdown-top">
+    <label tabindex="0" class="btn m-1">dropdown-top</label>
     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Item 1</a></li>
       <li><a>Item 2</a></li>
     </ul>
   </div></section>
-  <section class="container mx-auto"><div class="dropdown dropdown-top dropdown-end">
-    <label tabindex="0" class="btn m-1">Click</label>
+  <section class="container ml-80"><div class="dropdown dropdown-top dropdown-end">
+    <label tabindex="0" class="btn m-1">dropdown-end</label>
     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Item 1</a></li>
       <li><a>Item 2</a></li>
     </ul>
   </div></section>
-  <section class="container mx-auto"><div class="dropdown dropdown-left">
-    <label tabindex="0" class="btn m-1">Click</label>
+  <section class="container ml-80"><div class="dropdown dropdown-left">
+    <label tabindex="0" class="btn m-1">dropdown-left</label>
     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Item 1</a></li>
       <li><a>Item 2</a></li>
     </ul>
   </div></section>
-  <section class="container mx-auto"><div class="dropdown dropdown-left dropdown-end">
-    <label tabindex="0" class="btn m-1">Click</label>
+  <section class="container ml-80"><div class="dropdown dropdown-left dropdown-end">
+    <label tabindex="0" class="btn m-1">dropdown-left dropdown-end</label>
     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Item 1</a></li>
       <li><a>Item 2</a></li>
     </ul>
   </div></section>
-  <section class="container mx-auto"><div class="dropdown dropdown-right">
-    <label tabindex="0" class="btn m-1">Click</label>
+  <section class="container ml-80"><div class="dropdown dropdown-right">
+    <label tabindex="0" class="btn m-1">dropdown-right</label>
     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Item 1</a></li>
       <li><a>Item 2</a></li>
     </ul>
   </div></section>
-  <section class="container mx-auto"><div class="dropdown dropdown-right dropdown-end">
-    <label tabindex="0" class="btn m-1">Click</label>
+  <section class="container ml-80"><div class="dropdown dropdown-right dropdown-end">
+    <label tabindex="0" class="btn m-1">dropdown-right dropdown-end</label>
     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Item 1</a></li>
       <li><a>Item 2</a></li>
@@ -196,9 +196,137 @@
   </div>
   
   </section>
+
+  <div class="section container ml-80">
+    <div class="dropdown dropdown-hover">
+      <label tabindex="0" class="btn m-1">Hover</label>
+      <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Item 1</a></li>
+        <li><a>Item 2</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="section container ml-80"></div>
+<div class="dropdown dropdown-open ml-80">
+  <label tabindex="0" class="btn m-1">Button</label>
+  <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+    <li><a>Item 1</a></li>
+    <li><a>Item 2</a></li>
+  </ul>
+</div>
+</div>
+
+<div class="section container ml-80"></div>
+<div class="dropdown ml-80">
+  <label tabindex="0" class="btn m-1">Click</label>
+  <div tabindex="0" class="dropdown-content card card-compact w-64 p-2 shadow bg-primary text-primary-content">
+    <div class="card-body">
+      <h3 class="card-title">Card title!</h3>
+      <p>you can use any element as a dropdown.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<section class="container mx-auto">
+  <div class="navbar bg-base-300 rounded-box">
+    <div class="flex-1 px-2 lg:flex-none">
+      <a class="text-lg font-bold">daisyUI</a>
+    </div> 
+    <div class="flex justify-end flex-1 px-2">
+      <div class="flex items-stretch">
+        <a class="btn btn-ghost rounded-btn">Button</a>
+        <div class="dropdown dropdown-end">
+          <label tabindex="0" class="btn btn-ghost rounded-btn">Dropdown</label>
+          <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+            <li><a>Item 1</a></li> 
+            <li><a>Item 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- dropdown customization ends -->
 
+
+<!-- countdown section starts -->
+<div class="container ml-80">
+  <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:15;"></span>
+      </span>
+      days
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:10;"></span>
+      </span>
+      hours
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:24;"></span>
+      </span>
+      min
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:11;"></span>
+      </span>
+      sec
+    </div>
+  </div>
+</div>
+
+
+
+<div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:15;"></span>
+    </span>
+    days
+  </div> 
+  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:10;"></span>
+    </span>
+    hours
+  </div> 
+  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:24;"></span>
+    </span>
+    min
+  </div> 
+  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:14;"></span>
+    </span>
+    sec
+  </div>
+</div>
+<!-- countdown section ends -->
+
+
+
+<!-- progress section starts -->
+<div class="container mx-auto">
+  <progress class="progress progress-info w-56" value="0" max="100"></progress>
+<progress class="progress progress-info w-56" value="10" max="100"></progress>
+<progress class="progress progress-info w-56" value="40" max="100"></progress>
+<progress class="progress progress-info w-56" value="70" max="100"></progress>
+<progress class="progress progress-info w-56" value="100" max="100"></progress>
+</div>
+
+<div class="container mx-auto">
+<progress class="progress w-56"></progress>
+</div>
+<!-- progress section ends -->
 
 </body>
 </html>
